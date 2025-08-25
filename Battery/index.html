@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Живой индикатор заряда батареи - отображает текущий уровень заряда устройства в реальном времени">
+
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Индикатор заряда батареи - Живой виджет</title>
+    </head>
+    <body>
+
+        <section class="battery">
+            <div class="battery__card">
+                <div class="battery__data">
+                    <p class="battery__text">Батарея</p>
+                    <h1 class="battery__percentage">
+                        20%
+                    </h1>
+
+                    <p class="battery__status">
+                        Низкий заряд <i class="ri-plug-line"></i>
+                    </p>
+                </div>
+
+                <div class="battery__pill">
+                    <div class="battery__level">
+                        <div class="battery__liquid"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
