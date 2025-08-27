@@ -413,6 +413,27 @@ section{
     object-fit: cover;
 }
 
+.contact .row .map-container{
+    flex:1 1 45rem;
+    padding: 2rem;
+    background: var(--black);
+    border: var(--border);
+}
+
+.contact .row .map-container .map{
+    width: 100%;
+    height: 40rem;
+    border: var(--border);
+    border-radius: 1rem;
+    filter: grayscale(1) contrast(1.2) opacity(0.8);
+    transition: all 0.3s ease;
+}
+
+.contact .row .map-container .map:hover{
+    filter: grayscale(0) contrast(1) opacity(1);
+    transform: scale(1.02);
+}
+
 .contact .row form{
     flex:1 1 45rem;
     padding:5rem 2rem;
@@ -629,6 +650,22 @@ section{
 
     .home .content p{
         font-size: 1.5rem;
+    }
+
+    .contact .row{
+        flex-direction: column;
+    }
+
+    .contact .row .map-container{
+        padding: 1rem;
+    }
+
+    .contact .row .map-container .map{
+        height: 30rem;
+    }
+
+    .contact .row form{
+        padding: 3rem 1rem;
     }
 
 }
